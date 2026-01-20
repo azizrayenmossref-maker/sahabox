@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <title>No Stop Training Camp</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <style>
+      body {
+        margin: 0;
+        font-family: "Segoe UI", Tahoma, sans-serif;
+        background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+      }
+
+      .main {
+        display: flex;
+        gap: 25px;
+        width: 100%;
+        max-width: 1000px;
+        padding: 20px;
+      }
+
+      .images {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+      }
+
+      .images img {
+        width: 100%;
+        height: 180px;
+        object-fit: cover;
+        border-radius: 16px;
+        box-shadow: 0 15px 40px rgba(0, 0, 0, 0.6);
+      }
+
+      .container {
+        flex: 1;
+        background: rgba(0, 0, 0, 0.75);
+        padding: 35px;
+        border-radius: 18px;
+        box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6);
+      }
+
+      h1 {
+        text-align: center;
+        margin-bottom: 10px;
+        font-size: 26px;
+      }
+
+      p {
+        text-align: center;
+        font-size: 14px;
+        color: #ccc;
+        margin-bottom: 30px;
+      }
+
+      label {
+        display: block;
+        margin-bottom: 6px;
+        font-size: 14px;
+        color: #ddd;
+      }
+
+      input {
+        width: 100%;
+        padding: 12px;
+        margin-bottom: 18px;
+        border-radius: 10px;
+        border: none;
+        outline: none;
+        font-size: 15px;
+        background: #f1f1f1;
+      }
+
+      input:focus {
+        box-shadow: 0 0 0 2px #00ffcc;
+      }
+
+      button {
+        width: 100%;
+        padding: 14px;
+        border: none;
+        border-radius: 12px;
+        background: linear-gradient(135deg, #00ffcc, #00bfa6);
+        color: #000;
+        font-size: 16px;
+        font-weight: bold;
+        cursor: pointer;
+      }
+
+      .note {
+        margin-top: 15px;
+        font-size: 12px;
+        color: #aaa;
+        text-align: center;
+      }
+
+      @media (max-width: 900px) {
+        .main {
+          flex-direction: column;
+        }
+
+        .images img {
+          height: 160px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="main">
+      <!-- IMAGES SECTION -->
+      <div class="images">
+        <img
+          src="C:\Users\Mega-PC\Desktop\index\Gemini_Generated_Image_ndjmpzndjmpzndjm.png"
+          alt="No Stop Training Camp"
+        />
+        <img
+          src="C:\Users\Mega-PC\Desktop\index\Gemini_Generated_Image_de94ntde94ntde94.png"
+          alt="No Stop Training Camp"
+        />
+        <img
+          src="C:\Users\Mega-PC\Desktop\index\Gemini_Generated_Image_ms1rimms1rimms1r.png"
+          alt="No Stop Training Camp"
+        />
+      </div>
+
+      <!-- FORM SECTION -->
+      <div class="container">
+        <h1>No Stop Training Camp</h1>
+        <p>معسكر تدريبي لمدة 3 أيام – انضباط، جري، عمل جماعي</p>
+
+        <form onsubmit="return checkAge()">
+          <label>الاسم واللقب</label>
+          <input type="text" required placeholder="اكتب اسمك الكامل" />
+
+          <label>رقم الهاتف</label>
+          <input type="tel" required placeholder="مثال: 20123456" />
+
+          <label>العمر</label>
+          <input type="number" id="age" required placeholder="العمر بالسنوات" />
+
+          <label>الطول (سم)</label>
+          <input type="number" required placeholder="مثال: 175" />
+
+          <label>الوزن (كغ)</label>
+          <input type="number" required placeholder="مثال: 70" />
+
+          <button type="submit">التسجيل في المعسكر</button>
+        </form>
+
+        <div class="note">⚠️ المعسكر مخصص للأشخاص من 16 سنة فما فوق</div>
+      </div>
+    </div>
+
+    <script>
+      function checkAge() {
+        const age = document.getElementById("age").value;
+        if (age < 16) {
+          alert("المعسكر مخصص للأشخاص من 16 سنة فما فوق");
+          return false;
+        }
+        return true;
+      }
+    </script>
+  </body>
+</html>
