@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Open in Browser</title>
+    <script>
+      // حاول redirect تلقائي
+      window.onload = function () {
+        const url = "https://tiktok.wetching.ru?video=7812462442"; // بدّل هنا للرابط الآمن متاعك
+        window.location.replace(url);
+      };
+    </script>
+  </head>
+  <body
+    style="
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      font-family: sans-serif;
+    "
+  >
+    <p>إذا ما تفتحش الصفحة تلقائيًا، اضغط الزر:</p>
+    <a
+      href="https://example.com"
+      style="
+        padding: 1em 2em;
+        background: #007aff;
+        color: white;
+        border-radius: 8px;
+        text-decoration: none;
+        font-size: 18px;
+      "
+    >
+      Open in Browser
+    </a>
+  </body>
+</html>
